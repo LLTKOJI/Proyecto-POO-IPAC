@@ -1,0 +1,103 @@
+.rgb-red{
+    color: #E12104;
+}
+
+/*comienzan estilos para registro cliente*/
+#content-register-client {
+    background-color: #fff;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+}
+
+#interaction-register-client h1 {
+    color: #000;
+    font-size: 16px;
+    font-family: RobotoCondensed-Regular;
+}
+
+
+.title-register-client h1{
+    text-align: center;
+    color: #E12104;
+    font-size: 22px;
+    font-family: RobotoSlab-Medium;
+}
+#interaction-register-client {
+    padding: 0px 40px 0px 20px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+
+}
+#form-register-client h1{
+    margin: 5px 5px 3px 5px ;
+
+}
+.cont-register-client{
+    border-radius: 50px;
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    border: solid 2px;
+}
+.button-finish-register{
+    border-radius: 50px;
+    width: 60%;
+    padding: 10px;
+    background-color: #e12104e8 ;
+    color: #fff;
+    border: none;
+    
+}
+#form-finish-register{
+    text-align: center;
+}
+#form-terms-conditions{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+    margin: 6px 0px 6px 0px;
+}
+/*terminan estilos para registro cliente*/
+
+
+/*comienzan estilos para registro motorista*/
+#content-register-driver {
+    background-color: #fff;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    display: flex;
+}
+
+.form-register-model-plate{
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+}
+.form-register-model{
+    padding-right: 15px;
+}
+.form-register-plate{
+    padding-left: 15px;
+}
+#form-register-driver h1{
+    margin: 2px 5px 2px 5px ;
+
+}
+#form-terms-conditions-driver{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+    margin: 2px 0px 2px 0px;
+}
+
+/*terminan estilos para registro morotista*/
