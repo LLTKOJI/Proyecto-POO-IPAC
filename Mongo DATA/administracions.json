@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "64574068f858a2495f782223"
+  },
+  "nombreUsuario": "Kojikabuto75",
+  "contrasenia": "ZAPATO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645741d4f858a2495f782225"
+  },
+  "nombreUsuario": "cristopher75",
+  "contrasenia": "legobatman12",
+  "__v": 0
+}]

@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "6455bf6add671441b34c324d"
+  },
+  "motorista": "6455be0add671441b34c3246",
+  "producto": "6455c3b1dd671441b34c3256",
+  "cantidad": "2",
+  "estado": "En camino",
+  "ubicacion": "Zaun"
+}]

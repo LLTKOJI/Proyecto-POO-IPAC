@@ -1,0 +1,131 @@
+[{
+  "_id": {
+    "$oid": "64572d99187eb190f0d9bb00"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "BANCONNATOR",
+  "descripcion": "Hamburguesa de carne a la parrilla, cuatro lascas de queso, crujiente bacon, y cremosa salsa de queso cheddar en rico y suave pan de papa.",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 300,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64572df8187eb190f0d9bb02"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64572e41187eb190f0d9bb04"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6457745e2f085ee6053857ba"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645774a52f085ee6053857be"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645774f62f085ee6053857c4"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6457765c2f085ee6053857ca"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645776a92f085ee6053857d0"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645776fe2f085ee6053857d7"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645777892f085ee6053857e0"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645778cc2f085ee6053857e6"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64577a562f085ee6053857eb"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64577c1d2f085ee6053857f1"
+  },
+  "empresa": "6455bd59dd671441b34c3244",
+  "nombre": "Combo economico 1",
+  "descripcion": "Hamburguesa de pollo con papas",
+  "imagen": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\admin\\assets\\img\\productos",
+  "precio": 75,
+  "__v": 0
+}]

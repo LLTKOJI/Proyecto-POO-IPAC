@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "6455be0add671441b34c3246"
+  },
+  "nombres": "Juan Antonio ",
+  "apellidos": "Martines",
+  "email": "olimpiacampeon@gmail.com",
+  "password": "31COPAS",
+  "fechaNacimiento": "1977",
+  "genero": "Hombre",
+  "ciudad": "Zaun",
+  "telefono": "32323231",
+  "modeloMoto": "Honda navi",
+  "placa": "m111",
+  "aprobado": "si"
+}]

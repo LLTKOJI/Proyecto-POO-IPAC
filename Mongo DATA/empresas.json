@@ -8,4 +8,123 @@
   "ubicacion": [
     "Zaun"
   ]
+},{
+  "_id": {
+    "$oid": "645773742f085ee6053857b4"
+  },
+  "nombre": "Mi Empresa",
+  "categoria": "Comida",
+  "logo": "https://miempresa.com/logo.png",
+  "ubicacion": [
+    "Ciudad de México",
+    "Monterrey"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645774062f085ee6053857b6"
+  },
+  "nombre": "Mi Empresa",
+  "categoria": "Comida",
+  "logo": "https://miempresa.com/logo.png",
+  "ubicacion": [
+    "Ciudad de México",
+    "Monterrey"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6457745e2f085ee6053857b8"
+  },
+  "nombre": "Mi Empresa",
+  "categoria": "Comida",
+  "logo": "https://miempresa.com/logo.png",
+  "ubicacion": [
+    "Ciudad de México",
+    "Monterrey"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645774a52f085ee6053857bc"
+  },
+  "nombre": "Mi Empresa",
+  "categoria": "Comida",
+  "logo": "https://miempresa.com/logo.png",
+  "ubicacion": [
+    "Ciudad de México",
+    "Monterrey"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645774f62f085ee6053857c2"
+  },
+  "nombre": "Mi Empresa",
+  "categoria": "Comida",
+  "logo": "https://miempresa.com/logo.png",
+  "ubicacion": [
+    "Ciudad de México",
+    "Monterrey"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6457765c2f085ee6053857c8"
+  },
+  "nombre": "Mi Empresa",
+  "categoria": "Comida",
+  "logo": "https://miempresa.com/logo.png",
+  "ubicacion": [
+    "Ciudad de México",
+    "Monterrey"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645776a92f085ee6053857ce"
+  },
+  "nombre": "Mi Empresa",
+  "categoria": "Comida",
+  "logo": "https://miempresa.com/logo.png",
+  "ubicacion": [
+    "Ciudad de México",
+    "Monterrey"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645776fe2f085ee6053857d5"
+  },
+  "nombre": "Mi Empresa",
+  "categoria": "Comida",
+  "logo": "https://miempresa.com/logo.png",
+  "ubicacion": [
+    "Ciudad de México",
+    "Monterrey"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645777892f085ee6053857dc"
+  },
+  "nombre": "Mi Empresa",
+  "categoria": "Comida",
+  "logo": "https://miempresa.com/logo.png",
+  "ubicacion": [
+    "Ciudad de México",
+    "Monterrey"
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6457779e2f085ee6053857e3"
+  },
+  "nombre": "a",
+  "categoria": "Hamburguesa",
+  "logo": "si",
+  "ubicacion": [
+    "Farfania"
+  ],
+  "__v": 0
 }]
