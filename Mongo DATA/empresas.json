@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "6455bd59dd671441b34c3244"
+  },
+  "nombre": "Wendys",
+  "categoria": "Hamburguesas",
+  "logo": "C:\\Users\\Cristopher Izaguirre\\Documents\\Periodo 10\\POO\\Avance NUMBER 2\\Proyecto\\FASTFOOD FT\\cliente\\assets\\img",
+  "ubicacion": [
+    "Zaun"
+  ]
+}]

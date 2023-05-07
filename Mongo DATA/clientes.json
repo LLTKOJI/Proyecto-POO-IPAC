@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "6455bcbedd671441b34c3242"
+  },
+  "nombre": "Violet",
+  "apellido": "M7",
+  "email": "mainvi075@gmail.com",
+  "password": "caitlymylove",
+  "fechaNacimiento": "1995",
+  "genero": "mujer",
+  "ciudad": "zaun",
+  "telefono": "31313131",
+  "tarjetas": [],
+  "orden": []
+}]

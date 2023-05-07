@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FASTFOOD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/styles-login.css" />
+  <link rel="stylesheet" href="assets/font/fonts.css" />
+  <link rel="stylesheet" href="assets/css/styles-register.css" />
+  <link rel="stylesheet" href="assets/css/styles-user.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="https://kit.fontawesome.com/246f25c267.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- iniciar secion con cuenta-->
+  <div id="iniciar-secion-motorista">
+    <section id="content-login-user">
+      <div id="nav-return-login-user">
+        <input id="return-login-user" type="button" onclick="selectOption(6)" />
+      </div>
+      <img id="logo-login-user" src="assets/img/logo-temp.png" alt="logo-temporal" />
+      <section id="form-login">
+        <h1 class="text-start-user">Inicia Sesión</h1>
+        <div id="space-start-setion">
+          <input id="start-user-button" type="email" value="Correo/Telefono" />
+          <input id="start-user-button" type="text" value=" Contraseña" />
+          <div class="inper-space-link">
+            <div class="part-create-account">
+              <h2>¿No tienes una cuenta?</h2>
+              <a id="redict-create-account" href="#" onclick="selectOption(2)">Crea una aquí</a>
+            </div>
+          </div>
+        </div>
+        <div id="space-button-start">
+          <input class="start-user-button2" type="button" value="Iniciar Sesión" onclick="inciarSecion()" />
+          <input class="start-user-button2" type="button" value=" Iniciar con Google" style="background-color: #000" />
+        </div>
+        <div id="space-invited-link">
+          <a id="invited-link" href="#" onclick="selectOption(3)">Continuar como invitado</a>
+        </div>
+      </section>
+    </section>
+  </div>
+  <!--interface de user cliente-->
+  <div id="usuario-motorista" class="no-ver">
+    <section id="interface-client">
+      <div id="nav-interface-client">
+        <div id="inf-interface-client">
+          <div class="inf-client-nav">
+            <img class="edit-logo-profile" src="assets/img/logo-perfil.jpg" alt="edit-logo-profile"
+              onclick="cerrarSesion()" />
+            <h1 onclick="cerrarSesion()">¡Hola, Erick!</h1>
+          </div>
+          <div class="inf-client-location"></div>
+        </div>
+        <div id="button-interface-client">
+          <input class="button-int-client-edit1" type="button" value="Ver Entregas" onclick="verEntregas()" />
+          <div id="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Ubicación</h3>
+          </div>
+        </div>
+      </div>
+      <div id="menu-interface-client">
+        <div id="ordenes-menu">
+          <div id="tomar-orden" class="switch-orden" onclick="tomarOrden()">
+            <p>Tomar Orden</p>
+            <p></p>
+          </div>
+          <div id="ordenes-tomadas" onclick="ordenesTomadas()">
+            <p>Ordenes</p>
+            <p></p>
+            <p>tomadas</p>
+            <p></p>
+          </div>
+        </div>
+        <!-- tomar ordenes-->
+        <div id="tomar-ordenes">
+          <div class="tomar-orden-caja">
+            <div class="toc-1">
+              <img class="edit-logo-profile" src="assets/img/logo-perfil.jpg" alt="edit-logo-profile" />
+              <img class="edit-logo-profile" src="assets/img/logo-perfil.jpg" alt="edit-logo-profile" />
+              <div>
+                <p>BACONNATOR</p>
+                <p>Blv Morazan</p>
+              </div>
+            </div>
+            <p class="tomarparra">Entrega: Col.Sitio</p>
+            <div class="toc-1">
+              <p class="tomarparra">Usuario: rick75</p>
+              <button class="boton-tomar">Tomar</button>
+            </div>
+          </div>
+        </div>
+        <!-- ordenes tomadas-->
+        <div id="ordenes-tomadass" class="no-ver">
+          <div class="orden-tomada">
+            <div class="toc-1">
+              <img class="edit-logo-profile" src="assets/img/logo-perfil.png" alt="edit-logo-profile"
+                onclick="selectOption(7)" />
+              <img class="edit-logo-profile" src="../administrative/assets/img/image 8.png
+                                " alt="edit-logo-profile" onclick="selectOption(7)" />
+              <div class="title">
+                <p>BACONNATOR x2</p>
+                <p>Blv Morazan</p>
+              </div>
+            </div>
+            <p class="tomarparra">Entrega: Col.Sitio</p>
+            <div class="toc-1">
+              <p class="tomarparra">Usuario: rick75</p>
+              <b>Número:</b>
+              <p class="num">31513127</p>
+            </div>
+            <div class="botones-estados">
+              <button class="estado-seleccionado">Tomada</button>
+              <button>En camino</button>
+            </div>
+            <div class="botones-estados">
+              <button>En el Origen</button>
+              <button>En el destino</button>
+            </div>
+            <div style="display: flex; justify-content: center">
+              <button onclick="entregarPedido()" class="boton-entregar">
+                Entregar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Procesar orden-->
+      <div id="procesar-ordenes" class="no-ver">
+        <div id="entregas">
+          <button onclick="volverMenu('procesar-ordenes')" class="boton-atras">
+            <img src="./assets/img/image 19.png" alt="" />
+          </button>
+          <nav class="nav-ver-entrega">
+            <div class="texto-title">
+              <p>Procesando Orden</p>
+            </div>
+          </nav>
+          <div class="contenido-orden">
+            <div class="orden-title">
+              <img src="../administrative/assets/img/productos/bigmac.png" alt="" />
+              <p>Bigmac x2</p>
+            </div>
+            <div class="total-money">
+              <div class="suma-total">
+                <p>subtotal</p>
+                <p>L360</p>
+              </div>
+              <div class="suma-total">
+                <p>Envío</p>
+                <p>L30</p>
+              </div>
+              <div class="suma-total">
+                <p>ISV</p>
+                <p>L54</p>
+              </div>
+              <div class="suma-total"><b>Total</b> <b>L444</b></div>
+            </div>
+            <b>Forma de pago</b>
+            <div class="forma-pago">
+              <img src="./assets/img/pngwing 1.png" alt="" />
+              <b>Efectivo</b>
+            </div>
+            <b>Dirección de Entrega</b>
+            <div class="forma-pago">
+              <div style="padding: 15px">
+                <b>Erick</b>
+                <p>Res.Honduras</p>
+              </div>
+            </div>
+            <button class="boton-entregar entregado">Pedido Entregado</button>
+          </div>
+        </div>
+      </div>
+      <!-- ver entregas-->
+      <div id="ver-entregas" class="no-ver">
+        <div id="entregas">
+          <button onclick="volverMenu('ver-entregas')" class="boton-atras">
+            <img src="./assets/img/image 19.png" alt="" />
+          </button>
+          <nav class="nav-ver-entrega">
+            <div class="texto-title">
+              <p>Ver Entregas</p>
+            </div>
+          </nav>
+          <div class="contenido-orden">
+            <div class="entrega">
+              <div class="flexbo">
+                <div>
+                  <b>Wendys Blv Morazan</b>
+                  <p>19/06/2022 - Pago efectivo</p>
+                </div>
+              </div>
+              <div class="flexbo">
+                <p>2x BACCONATOR</p>
+                <p>NICKDABOOM</p>
+              </div>
+              <div class="flexbo mini-square">
+                <p>Entregado</p>
+              </div>
+            </div>
+            <div class="entrega">
+              <div class="flexbo">
+                <img src="../administrative/assets/img/image 8.png" alt="" />
+                <div>
+                  <b>Wendys Blv Morazan</b>
+                  <p>19/06/2022 - Pago efectivo</p>
+                </div>
+              </div>
+              <div class="flexbo">
+                <p>2x BACCONATOR</p>
+                <p>NICKDABOOM</p>
+              </div>
+              <div class="flexbo mini-square">
+                <p>Entregado</p>
+              </div>
+            </div>
+            <div class="entrega">
+              <div class="flexbo">
+                <img src="../administrative/assets/img/image 8.png" alt="" />
+                <div>
+                  <b>Wendys Blv Morazan</b>
+                  <p>19/06/2022 - Pago efectivo</p>
+                </div>
+              </div>
+              <div class="flexbo">
+                <p>2x BACCONATOR</p>
+                <p>NICKDABOOM</p>
+              </div>
+              <div class="flexbo mini-square">
+                <p>Entregado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/controlador.js"></script>
+</body>
+
+</html>

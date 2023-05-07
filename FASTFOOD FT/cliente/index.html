@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASTFOOD</title>
+    <link rel="stylesheet" href="assets/css/styles-login.css">
+    <link rel="stylesheet" href="assets/font/fonts.css">
+    <link rel="stylesheet" href="assets/css/styles-register.css">
+    <link rel="stylesheet" href="assets/css/styles-user.css">
+    <script src="https://kit.fontawesome.com/246f25c267.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="blockPag()">
+    <!--Seleccionar la forma de iniciar secion-->
+    <section id="content-login">
+        <img id="logo-login" src="assets/img/logo-temp.png" alt="logo-temporal">
+        <section id="form">
+            <h1>¡Te damos la bienvenida!</h1>
+            <h2>¿Como quieres continuar?</h2>
+            <div id="space-control-button">
+                <input class="login-button" type="button" value="Iniciar Sesión" onclick="selectOption(1)">
+                <input class="login-button" type="button" value="Registrarse" onclick="selectOption(2)">
+            </div>
+            <div id="space-invited-link">
+                <a id="invited-link" href="#" onclick="selectOption(3)">Continuar como invitado</a>
+            </div>
+        </section>
+    </section>
+    <!--Seleccionar el metodo de registro-->
+    <section id="content-register">
+        <div id="nav-register">
+            <input id="register-nav-button" type="button" value="" onclick="selectOption(6)">
+        </div>
+        <div id="bar-logo-register">
+            <img id="logo-register" src="assets/img/logo-temp.png" alt="logo-temporal">
+        </div>
+        <div id="interaction-register">
+            <h1>Seleccione su método de registro:</h1>
+            <div id="space-button-register">
+                <input class="register-button" type="button" value="Cliente" onclick="selectOption(4)">
+                <input class="register-button" type="button" value="Repartidor" onclick="selectOption(5)">
+            </div>
+        </div>
+    </section>
+    <!--Pagina para registrase como nuevo cliente-->
+    <section id="content-register-client">
+        <div id="nav-register">
+            <input id="register-nav-button" type="button" value="" onclick="selectOption(2)">
+        </div>
+        <div id="bar-logo-register">
+            <img id="logo-register" src="assets/img/logo-temp.png" alt="logo-temporal">
+        </div>
+        <div class="title-register-client">
+            <h1> Registro Cliente</h1>
+        </div>
+        <div id="interaction-register-client">
+            <div id="form-register-client">
+                <div class="space-name">
+                    <h1><i class="fa-solid fa-user rgb-red"></i>Nombres <i
+                            class="fa-regular fa-asterisk rgb-red"></i></i></h1>
+                    <input class="cont-register-client" type="text">
+                </div>
+                <div class="form-register-lastname">
+                    <h1><i class="fa-solid fa-user rgb-red"></i></i>Apellidos <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="text">
+                </div>
+                <div class="form-register-email">
+                    <h1><i class="fa-solid fa-at rgb-red"></i>Correo Electronico <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="email">
+                </div>
+                <div class="form-register-password">
+                    <h1><i class="fa-solid fa-lock rgb-red"></i> Contraseña <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="password">
+                </div>
+                <div class="form-register-date">
+                    <h1><i class="fa-solid fa-calendar rgb-red"></i>Fecha de Nacimiento <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="date">
+                </div>
+                <div class="form-register-gender">
+                    <h1><i class="fa-solid fa-venus-mars rgb-red"></i>Genero <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <select class="cont-register-client" name="gender">
+                        <option>Selecciona tu genero</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Prefiero no decir</option>
+                    </select>
+                </div>
+                <div class="form-register-city">
+                    <h1><i class="fa-solid fa-city rgb-red"></i>Ciudad <i class="fa-regular fa-asterisk rgb-red"></i>
+                    </h1>
+                    <select class="cont-register-client" name="city">
+                        <option>Seleciione su Ciudad</option>
+                        <option>Tegucigalpa</option>
+                        <option>San Pedro Sula</option>
+                    </select>
+                </div>
+                <div class="form-register-phone">
+                    <h1><i class="fa-solid fa-mobile-screen rgb-red"></i>Telefono <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="number">
+                </div>
+            </div>
+            <div id="form-terms-conditions">
+                <input class="checkbox-register-client" type="checkbox">
+                <h1>Acepto <i class="rgb-red">los terminos y condiciones.</i></h1>
+            </div>
+            <div id="form-finish-register">
+                <input class="button-finish-register " type="button" value="Finalizar" onclick="selectOption(1)">
+            </div>
+        </div>
+    </section>
+
+    <!--Pagina para registrase como nuevo repartidor-->
+    <section id="content-register-driver">
+        <div id="nav-register">
+            <input id="register-nav-button" type="button" value="" onclick="selectOption(2)">
+        </div>
+        <div id="bar-logo-register">
+            <img id="logo-register" src="assets/img/logo-temp.png" alt="logo-temporal">
+        </div>
+        <div class="title-register-client">
+            <h1> Registro Repartidor</h1>
+        </div>
+        <div id="interaction-register-client">
+            <div id="form-register-driver">
+                <div class="space-name">
+                    <h1><i class="fa-solid fa-user rgb-red"></i>Nombres <i
+                            class="fa-regular fa-asterisk rgb-red"></i></i></h1>
+                    <input class="cont-register-client" type="text">
+                </div>
+                <div class="form-register-lastname">
+                    <h1><i class="fa-solid fa-user rgb-red"></i></i>Apellidos <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="text">
+                </div>
+                <div class="form-register-email">
+                    <h1><i class="fa-solid fa-at rgb-red"></i>Correo Electronico <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="email">
+                </div>
+                <div class="form-register-password">
+                    <h1><i class="fa-solid fa-lock rgb-red"></i> Contraseña <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="password">
+                </div>
+                <div class="form-register-date">
+                    <h1><i class="fa-solid fa-calendar rgb-red"></i>Fecha de Nacimiento <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="date">
+                </div>
+                <div class="form-register-gender">
+                    <h1><i class="fa-solid fa-venus-mars rgb-red"></i>Genero <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <select class="cont-register-client" name="gender">
+                        <option>Selecciona tu genero</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Prefiero no decir</option>
+                    </select>
+                </div>
+                <div class="form-register-model-plate">
+                    <div class="form-register-model">
+                        <h1><i class="far fa-id-badge rgb-red"></i>Modelo Motocicleta<i
+                                class="fa-regular fa-asterisk rgb-red"></i></h1>
+                        <input class="cont-register-client" type="text">
+                    </div>
+                    <div class="form-register-plate">
+                        <h1><i class="far fa-id-badge rgb-red"></i>Placa Motocicleta<i
+                                class="fa-regular fa-asterisk rgb-red"></i></h1>
+                        <input class="cont-register-client" type="text">
+                    </div>
+                </div>
+                <div class="form-register-city">
+                    <h1><i class="fa-solid fa-city rgb-red"></i>Ciudad <i class="fa-regular fa-asterisk rgb-red"></i>
+                    </h1>
+                    <select class="cont-register-client" name="city">
+                        <option>Seleciione su Ciudad</option>
+                        <option>Tegucigalpa</option>
+                        <option>San Pedro Sula</option>
+                    </select>
+                </div>
+                <div class="form-register-phone">
+                    <h1><i class="fa-solid fa-mobile-screen rgb-red"></i>Telefono <i
+                            class="fa-regular fa-asterisk rgb-red"></i></h1>
+                    <input class="cont-register-client" type="number">
+                </div>
+            </div>
+            <div id="form-terms-conditions-driver">
+                <input class="checkbox-register-client" type="checkbox">
+                <h1>Acepto <i class="rgb-red">los terminos y condiciones.</i></h1>
+            </div>
+            <div id="form-finish-register">
+                <input class="button-finish-register " type="button" value="Finalizar" onclick="selectOption(1)">
+            </div>
+        </div>
+    </section>
+    <!-- iniciar secion con cuenta-->
+    <section id="content-login-user">
+        <div id="nav-return-login-user">
+            <input id="return-login-user" type="button" value="" onclick="selectOption(6)">
+
+        </div>
+        <img id="logo-login-user" src="assets/img/logo-temp.png" alt="logo-temporal">
+        <section id="form-login">
+            <h1 class="text-start-user">Inicia Seción</h1>
+            <div id="space-start-setion">
+                <input id="start-user-button" type="mail" value="@ Correo/Telefono">
+                <input id="start-user-button" type="text" value=" Contraseña">
+                <div class="inper-space-link"><a id="forgot-password" href="#">¡Olvidé mi contraseña!</a>
+                    <div class="part-create-account">
+                        <h2>¿No tienes una cuenta?</h2><a id="redict-create-account" href="#"
+                            onclick="selectOption(2)">Crea una aqui</a>
+                    </div>
+                </div>
+            </div>
+            <div id="space-button-start">
+                <input class="start-user-button2" type="button" value="Iniciar Seción" onclick="selectOption(3)">
+            </div>
+            <div id="space-invited-link">
+                <a id="invited-link" href="#" onclick="selectOption(3)">Continuar como invitado</a>
+            </div>
+        </section>
+    </section>
+    <!--interface de user cliente-->
+    <section id="interface-client">
+        <div id="nav-interface-client">
+            <div id="inf-interface-client">
+                <div class="inf-client-nav">
+                    <img class="edit-logo-profile" src="assets/img/logo-perfil.jpg" alt="edit-logo-profile"
+                        onclick="selectOption(7)">
+                    <h1 onclick="selectOption(7)"> ¡Hola, Rick! </h1>
+                </div>
+                <h2>¿Que pediremos hoy?</h2>
+                <div class="inf-client-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Ubicación</h3>
+                </div>
+            </div>
+            <div id="button-interface-client">
+                <input class="button-int-client-edit1" type="button" value="Domilcilio" onclick="selectOption(9)">
+                <input class="button-int-client-edit2" type="button" value="Ver Pedidos" onclick="selectOption(14)">
+            </div>
+        </div>
+        <div id="menu-interface-client">
+            <div id="menu-option-client1">
+                <input class="option-client-input1" type="button" value="WENDYS" onclick="selectOption(8)">
+                <div class="suboption-menu-client">
+                    <input class="option-client-input2" type="button" value="BURGUER KING">
+                </div>
+            </div>
+            <div id="menu-option-client2">
+                <div class="suboption-menu-client">
+                    <input class="option-client-input4" type="button" value="LITTLE CEASAR">
+                </div>
+                <input class="option-client-input6" type="button" value="BALEADAS">
+            </div>
+        </div>
+    </section>
+    <!--interface usuario opciones-->
+    <section id="interface-client-option">
+        <div id="nav-interface-client-option">
+            <div class="nav-back-info-option-client">
+                <div> <input id="client-nav-button" type="button" value="" onclick="selectOption(3)"></div>
+                <div class="title-option-client">
+                    <h1>PERFIL</h1>
+                </div>
+                <div></div>
+            </div>
+            <div class="info-general-option-client">
+                <div>
+                    <img class="edit-logo-profile-info" src="assets/img/logo-temp.png" alt="edit-logo-profile">
+                </div>
+                <div class="general-info-client">
+                    <h1>¡Hola, Erick!</h1>
+                    <div class="just-icon-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h2>example@unah.hn</h2>
+                    </div>
+                    <div class="just-icon-info">
+                        <i class="fa-regular fa-phone"></i>
+                        <h2>+50422002200</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-options-client">
+            <div class="menu-options-client-space">
+                <div class="edit-menu-options-client">
+                    <input class="button-edit-menu-option-client" type="button" value="">
+                    <h1>Formas de pago</h1>
+                </div>
+                <div class="edit-menu-options-client">
+                    <input class="button-edit-menu-option-client" type="button" value="">
+                    <h1>Preferencias</h1>
+                </div>
+                <div class="edit-menu-options-client">
+                    <input class="button-edit-menu-option-client" type="button" value="">
+                    <h1>Tus Direcciones</h1>
+                </div>
+                <div class="edit-menu-options-client">
+                    <input class="button-edit-menu-option-client" type="button" value="">
+                    <h1>Ayuda</h1>
+                </div>
+                <div class="edit-menu-options-client" onclick="selectOption(6)">
+                    <input class="button-edit-menu-option-client" type="button" value="">
+                    <h1>Cerrar Sesión</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--interface usuario restaurante-->
+    <section id="interface-client-restaurante">
+        <div id="nav-interface-client-option">
+            <div class="nav-back-info-option-client">
+                <div> <input id="client-nav-button" type="button" value="" onclick="selectOption(3)"></div>
+                <div class="title-option-client">
+                    <h1>WENDYS</h1>
+                </div>
+                <div></div>
+            </div>
+            <div class="content-info-restaurant">
+                <div></div>
+                <div class="info-general-restaurant">
+                    <img class="img-restaurant-client" src="assets/img/comida.png" alt="">
+                </div>
+                <input class="button-int-client-edit1-1" type="button" value="" onclick="selectOption(9)">
+            </div>
+        </div>
+        <div id="menu-options-foods">
+            <div class="menu-options-restaurant-space">
+                <div class="content-options-restaurant-space" onclick="selectOption(12)">
+                    <div class="logo-food-restaurant">
+                        <img class="edit-img-content-food" src="assets/img/Wendys.png" alt="Wendys-logo">
+                    </div>
+                    <div class="info-food-restaurant">
+                        <h1>Wendys Blv Morazan</h1>
+                        <h2>Envio L.30</h2>
+                    </div>
+                    <div class="star-food-restaurant">
+                        <i class="fa-solid fa-star edit-star"></i>
+                        <h3>4.5</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--interface usuario ordenes-->
+    <section id="interface-client-orden">
+        <div id="nav-interface-client-option">
+            <div class="nav-back-info-option-client">
+                <div> <input id="client-nav-button" type="button" value="" onclick="selectOption(3)"></div>
+                <div class="title-option-client">
+                    <h1>ORDENES</h1>
+                </div>
+                <div></div>
+            </div>
+            <div class="content-buttons-orden">
+
+                <div id="opcion-orden-activas" class="info-ordenes-option title-option-client opcion-activa "
+                    onclick="selectOptionOrden(10)">
+                    <h1>PEDIR</h1>
+                </div>
+                <div id="opcion-orden-historial" class="info-ordenes-option title-option-client "
+                    onclick="selectOptionOrden(11)">
+                    <h1>HISTORIAL</h1>
+                </div>
+            </div>
+        </div>
+        <div id="menu-options-foods-1">
+            <div class="content-info-procesar-orden">
+                <div class="estruct-cont-pedido-act">
+                    <div class="fila-cont-pedido-act">
+                        <div class="logo-pedido-act">
+                            <img class="edit-img-content-food" src="assets/img/Wendys.png" alt="Wendys-logo">
+                        </div>
+                        <div class="info-pedido-act">
+                            <div>
+                                <h1>Wendys Bvl Morazan</h1>
+                            </div>
+                            <div class="info-pf-pedido">
+                                <div>
+                                    <h2>19/06/22</h2>
+                                </div>
+                                <div>
+                                    <h3>Pago Efectivo</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="fila2-pedido-act">
+                        <div>
+                            <h1>2 x BACONNATOR</h1>
+                        </div>
+                        <div>
+                            <h1>L350</h1>
+                        </div>
+                    </div>
+                    <div class="def-est-pedido-pedir">
+                        <div class="est-pedido-pedir">
+                            <h2>Eliminar Orden</h2>
+                        </div>
+                        <div class="est-pedido-pedir2">
+                            <h2>Procesar Orden</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-button-orden-procesar">
+                <input class="button-orden-procesar" type="button" value="Nueva Orden">
+            </div>
+        </div>
+        <div id="menu-options-foods-2">
+            <div class="content-info-procesar-orden">
+                <div class="estruct-cont-pedido-act">
+                    <div class="fila-cont-pedido-act">
+                        <div class="logo-pedido-act">
+                            <img class="edit-img-content-food" src="assets/img/Wendys.png" alt="Wendys-logo">
+                        </div>
+                        <div class="info-pedido-act">
+                            <div>
+                                <h1>Wendys Blv Morazan</h1>
+                            </div>
+                            <div class="info-pf-pedido">
+                                <div>
+                                    <h2>19/06/22</h2>
+                                </div>
+                                <div>
+                                    <h3>Pago Efectivo</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="fila2-pedido-act">
+                        <div>
+                            <h1>2 x Big Mac</h1>
+                        </div>
+                        <div>
+                            <h1>L360</h1>
+                        </div>
+                    </div>
+
+                    <div class="est-pedido-historial">
+                        <h2>Orden Entregada</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--interface usuario menu restaurantes-->
+    <section id="interface-client-restaurante-menu">
+        <div id="nav-interface-client-option">
+            <div class="nav-back-info-option-food">
+                <div> <input id="food-nav-button" type="button" value="" onclick="selectOption(8)"></div>
+                <div><input class="button-int-food-edit1" type="button" value="Domilcilio" onclick="selectOption(9)">
+                </div>
+            </div>
+            <div class="content-info-restaurant">
+                <div class="inf-menu-restaurant">
+                    <div>
+                        <img class="edit-img-content-food" src="assets/img/Wendys.png" alt="Wendys-logo">
+                    </div>
+                    <div class="title-menu-restaurant">
+                        <h1>WENDYS</h1>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-options-foods">
+            <div class="menu-options-restaurant-space">
+                <div class="content-options-restaurant-menu">
+                    <div class="menu-food-rest">
+                        <div>
+                            <img class="edit-img-content-food" src="assets/img/baconnator.jfif" alt="Wendys-logo">
+                        </div>
+                        <div class="menu-food-restaurant">
+                            <h1>BACCONATOR</h1>
+                            <h2>L175</h2>
+                        </div>
+                    </div>
+
+                    <div class="plus-food-restaurant" onclick="selectOption(13)">
+                        <i class="fa-solid fa-plus size-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--interface usuario info producto restaurante-->
+    <section id="interface-info-prod-restaurante">
+        <div id="nav-interface-client-option">
+            <div class="nav-back-info-option-food">
+                <div> <input id="food-nav-button" type="button" value="" onclick="selectOption(12)"></div>
+                <div><input class="button-int-food-edit1" type="button" value="Domilcilio" onclick="selectOption(9)">
+                </div>
+            </div>
+            <div class="content-info-restaurant">
+                <div class="inf-menu-restaurant">
+                    <div>
+                        <img class="edit-img-content-food" src="assets/img/Wendys.png" alt="Wendys-logo">
+                    </div>
+                    <div class="title-menu-restaurant">
+                        <h1>Wendys</h1>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-options-foods">
+            <div class="menu-options-info-prod">
+                <div class="fila-info-food">
+                    <div>
+                        <img class="edit-img-info-prod" src="assets/img/baconnator.jfif" alt="Wendys-logo">
+                    </div>
+                </div>
+                <div class="marg-fil-prod">
+                    <div class="fila2-info-prod">
+                        <div>
+                            <h1>BACONNATOR</h1>
+                        </div>
+                        <div>
+                            <h2>L180</h2>
+                        </div>
+                    </div>
+                    <div class="cont-descrip-prod">
+                        <h3>Hamburguesa de carne a la parrilla, cuatro lascas de queso, crujiente bacon, y cremosa salsa
+                            de queso cheddar en rico y suave pan de papa.</h3>
+                    </div>
+                    <div class="select-unidad-food">
+                        <div class="pm-buttons-unidad">
+                            <i class="fa-solid fa-minus pm-size"></i>
+                        </div>
+                        <div class="text-unidad-food">
+                            <h1>Unidades 2</h1>
+                        </div>
+                        <div class="pm-buttons-unidad">
+                            <i class="fa-solid fa-plus pm-size"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-button-info-agg-prod">
+                    <input class="button-info-agg-prod" type="button" value="Agregar (2) al carrito">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contenido modal ver pedidios-->
+    <section id="contenido-modal-pedidos">
+        <div id="modal-pedidos">
+            <div class="def-nav-modal-pedidos">
+                <div>
+                    <h1>Pedidos Actuales</h1>
+                </div>
+            </div>
+            <div class="def-estruct-cont-pedido-act">
+                <div class="estruct-cont-pedido-act">
+                    <div class="fila-cont-pedido-act">
+                        <div class="logo-pedido-act">
+                            <img class="edit-img-content-food" src="assets/img/Wendys.png" alt="Wendys-logo">
+                        </div>
+                        <div class="info-pedido-act">
+                            <div>
+                                <h1>Wendys Blv Morazan</h1>
+                            </div>
+                            <div class="info-pf-pedido">
+                                <div>
+                                    <h2>19/06/22</h2>
+                                </div>
+                                <div>
+                                    <h3>Pago Efectivo</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="fila2-pedido-act">
+                        <div>
+                            <h1>2 x BACCONATOR</h1>
+                        </div>
+                        <div>
+                            <h1>L350</h1>
+                        </div>
+                    </div>
+                    <div class="est-pedido-act">
+                        <h2>En camino</h2>
+                    </div>
+                    <div class="moto-pedido-act">
+                        <div>
+                            <img class="edit-logo-profile-info1" src="assets/img/logo-perfil.png"
+                                alt="edit-logo-profile">
+                        </div>
+                        <div>
+                            <h2>Entregado por: Carlos Arturo</h2>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="back-modal-pedidos" onclick="selectOption(3)">
+                <h1>Listo</h1>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <button onclick="seleccionarOpcion(1)" id="pedidosicon" class="icon"> <i
+                    class="fa-solid fa-clipboard-list"></i> </button>
+            <button onclick="seleccionarOpcion(2)" id="homeicon" class="icon"> <i class="fa-solid fa-house"></i>
+            </button>
+            <button onclick="seleccionarOpcion(3)" id="usericon" class="icon"> <i class="fa-solid fa-circle-user"></i>
+            </button>
+        </footer>
+
+    </section>
+    <script src="assets/js/controller-login.js"></script>
+</body>
+
+</html>
